@@ -1,0 +1,3 @@
+id,username,email,role,hashed_password
+1,user,user@example.com,user,password
+2,admin,admin@example.com,admin,password

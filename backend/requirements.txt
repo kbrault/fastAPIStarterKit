@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+sqlalchemy[asyncio]
+pydantic
+pydantic[email]
+bcrypt==4.0.1
+python-dotenv
+aiosqlite
+python-jose[cryptography]
+python-multipart
+slowapi
+limits
+pandas
+passlib[bcrypt]

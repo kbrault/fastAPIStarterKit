@@ -1,0 +1,194 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "fastapistarterkit",
+    "collectionId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+    "dateExported": "2025-04-19T17:11:56.438Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a7494e43-ff0f-4e78-952f-b9ec8e54cec7",
+            "colId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+            "containerId": "",
+            "name": "Login User",
+            "url": "http://0.0.0.0:8080/api/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-04-16T11:58:28.448Z",
+            "modified": "2025-04-19T16:14:23.046Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "user"
+                    },
+                    {
+                        "name": "password",
+                        "value": "password"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "8d791098-7f07-4fba-a075-6bda746fdb9b",
+            "colId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+            "containerId": "",
+            "name": "Login Admin",
+            "url": "http://0.0.0.0:8080/api/login",
+            "method": "POST",
+            "sortNum": 22500,
+            "created": "2025-04-16T11:58:41.945Z",
+            "modified": "2025-04-19T15:56:53.683Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "password"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "f2f6bc99-9cee-48f1-934d-e881a6925ea0",
+            "colId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+            "containerId": "",
+            "name": "Refresh",
+            "url": "http://0.0.0.0:8080/api/refresh-token",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2025-04-16T11:58:37.848Z",
+            "modified": "2025-04-19T16:26:12.363Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzQ1Njg0NzU5fQ.dCBLRZgVc6J3_Z-zRgamJaLUEmDUAsq_L--K5LFEevc"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "05bea1e2-7e41-42e4-b60c-5367ca1b83f7",
+            "colId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+            "containerId": "",
+            "name": "Products",
+            "url": "http://0.0.0.0:8080/api/products",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-04-16T11:58:34.117Z",
+            "modified": "2025-04-19T16:15:09.939Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDUwODEwNzJ9.bRv3-Uv8O9hyktkeYjJekkYWWptihcq9_j4QQkUjAcw"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "735c8c95-9390-4404-bb07-0ec3a69c8cc4",
+            "colId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+            "containerId": "",
+            "name": "Users",
+            "url": "http://0.0.0.0:8080/api/users",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-04-16T11:59:57.404Z",
+            "modified": "2025-04-19T16:15:17.702Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDUwODEwNzJ9.bRv3-Uv8O9hyktkeYjJekkYWWptihcq9_j4QQkUjAcw"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "b0f81774-ac93-4eb3-8e3a-457c35162f0e",
+            "colId": "2fb6bc51-0f03-4f22-a9bf-e9760e945c80",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://0.0.0.0:8080/api/register",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-04-16T12:24:15.614Z",
+            "modified": "2025-04-19T15:57:19.826Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"username\": \"nuser\",\n    \"email\": \"nuser@example.com\",\n    \"password\": \"password\"\n}\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "c_XbxHBRPMYEBVfOGyd8gVbHfKaZ9OfARUM0JEPEIdAtibDJi--EVthc61_0fqrZbi2JJ4nqpNcIifdcjnEAeA"
+}

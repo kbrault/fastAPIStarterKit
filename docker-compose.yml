@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: fastapistarterkit_back
+    container_name: fastapistarterkit_app
+    ports:
+      - "8080:8080"
+    volumes:
+      - fastapistarterkit_db:/app/data/db
+    env_file:
+      - ./backend/.env
+    environment:
+      - DOCKER_ENV=true
+    networks:
+      - fastapistarterkit_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: fastapistarterkit_front
+    container_name: fastapistarterkit_front
+    ports:
+      - "80:80"
+    env_file:
+      - ./frontend/.env
+    networks:
+      - fastapistarterkit_network
+    depends_on:
+      - backend
+
+volumes:
+  fastapistarterkit_db:
+    name: fastapistarterkit_db
+
+networks:
+  fastapistarterkit_network:
+    driver: bridge

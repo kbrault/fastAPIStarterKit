@@ -1,15 +1,6 @@
 # fastAPIStartKit
 
-## 1️⃣ **Local installation**
-
-```sh
-cd backend
-python3 -m venv .venv
-pip install -r requirements.txt
-python3 run.py load && python3 run.py app
-```
-
-## 2️⃣ **Docker installation**
+## **Deployment**
 
 ```sh
 docker compose up --build -d \

@@ -1,6 +1,31 @@
 id,name,category,price
-1,Ordinateur,Électronique,999.99
-2,Smartphone,Électronique,699.99
-3,Chaise,Meubles,49.99
-4,Lampe,Meubles,19.99
-5,Casque Audio,Électronique,129.99
+1,Computer,Electronics,999.99
+2,Smartphone,Electronics,699.99
+3,Chair,Furniture,49.99
+4,Lamp,Furniture,19.99
+5,Headphones,Electronics,129.99
+6,Tablet,Electronics,399.99
+7,Desk,Furniture,129.99
+8,Bookshelf,Furniture,89.99
+9,Refrigerator,Electronics,799.99
+10,Microwave,Electronics,119.99
+11,Sofa,Furniture,499.99
+12,Blender,Kitchen,39.99
+13,Coffee Maker,Kitchen,59.99
+14,TV,Electronics,599.99
+15,Smartwatch,Electronics,199.99
+16,Electric Kettle,Kitchen,24.99
+17,Desk Lamp,Furniture,29.99
+18,Running Shoes,Clothing,74.99
+19,T-shirt,Clothing,14.99
+20,Backpack,Accessories,34.99
+21,Wireless Mouse,Electronics,24.99
+22,Keyboard,Electronics,49.99
+23,Printer,Electronics,149.99
+24,Monitor,Electronics,179.99
+25,Bicycle,Sports,249.99
+26,Helmet,Sports,39.99
+27,Yoga Mat,Sports,19.99
+28,Vacuum Cleaner,Electronics,149.99
+29,Toaster,Kitchen,29.99
+30,Air Conditioner,Electronics,349.99

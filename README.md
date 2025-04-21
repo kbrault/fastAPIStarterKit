@@ -1,3 +1,7 @@
+Work in progress, far from beeing usable
+
+---
+
 # fastAPIStartKit
 
 ## **Deployment**

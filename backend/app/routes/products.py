@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, Query, Request
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
+from sqlalchemy import func  # Import func to count total products
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 from dotenv import load_dotenv
@@ -35,17 +36,20 @@ async def get_products(
     offset: int = Query(DEFAULT_OFFSET, ge=0, description="Offset for pagination")
 ):
     """
-    Retrieve a paginated list of products for an authenticated user.
+    Retrieve a paginated list of products for an authenticated user, including total count for pagination.
     """
-    result = await db.execute(
-        select(Product).limit(limit).offset(offset)
-    )
+
+    # Get total product count for pagination
+    total_count = await db.scalar(select(func.count()).select_from(Product))
+
+    # Get paginated products
+    result = await db.execute(select(Product).limit(limit).offset(offset))
     products = result.scalars().all()
 
     return format_response(
         status="success",
         message="Products retrieved successfully.",
-        data=products,
+        data={"products": products, "total_count": total_count},  # Include total count
         code=200
     )
 

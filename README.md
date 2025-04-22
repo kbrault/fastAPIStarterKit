@@ -1,4 +1,4 @@
-Work in progress, far from beeing usable
+Work in progress, far from beeing production ready
 
 ---
 
